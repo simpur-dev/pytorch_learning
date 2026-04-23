@@ -8,7 +8,7 @@ model = nn.Linear(1, 1)
 loss_fn = nn.MSELoss()
 optimizer = torch.optim.SGD(model.parameters(), lr=0.01)
 
-for epoch in range(2000):
+for epoch in range(5000):
     optimizer.zero_grad()
     pred = model(x)
 
